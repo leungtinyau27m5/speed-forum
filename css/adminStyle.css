@@ -1,0 +1,52 @@
+#numericStat{
+	font-family: "Times New Roman", Times, serif;
+	padding: 50px;
+}
+.statCard{
+	padding: 20px;
+	color: #3772AE;
+	font-weight: bold;
+}
+.topStatTitle{
+	font-size: 1em;
+}
+.count{
+	font-size: 3em;
+	border-right: 2px solid black;
+}
+.countBottom{
+	color: hsl(26, 33%, 16%);
+}
+.countBottomVar{
+	color: hsl(133, 59%, 44%);
+}
+.lg4Card{
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+.lg4Card .lg4Content{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	padding: 25px;
+}
+.lg4Card .cardHeader{
+	font-size: 1.5em;
+	padding-left: 25px;
+	margin-bottom: 25px;
+	color: hsl(142, 55%, 30%);
+}
+.lg4Card .cardHeader .headerTool{
+	float: right;
+}
+.lg4Card .cardHeader .headerTool:hover{
+	cursor: pointer;
+	filter: blur(1px);
+}
+.lg4Card .cardBody{
+	overflow-y: scroll;
+	max-height: 400px;
+}
+@media only screen and (min-width:992px){}
+	.myModalSize{
+		min-width: 1800px;
+	}
+}

@@ -1,0 +1,145 @@
+.parallax { 
+    /* The image used */
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 992){
+	.parallax{
+		//min-height: 380px;
+	}
+	#mytopHeader{
+		
+	}
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+		height: 100%;
+    }
+	#mytopHeader{
+		height: 380px;
+	}
+}
+.container{
+	//margin-top: 12px;
+}
+.fa{
+	//padding: 20px;
+	font-size: 30px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	height: auto;
+}
+.fa:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	background-color: #ff4d4d;
+	filter: blur(2px);
+}
+.parallaxBooks{
+	background-image: url("../img/books.gif");
+}
+.parallaxMain{
+	background-image: url("../img/classroom.gif");
+}
+.parallaxForum{
+	background-image: url("../img/forumbg.jpg");
+}	
+@media only screen and (max-width: 992px){
+	.parallax{
+		height: 100%;
+	}
+	.profile-photo{
+		width: 140px;
+	}		
+}
+@media only screen and (min-width: 992px){
+	.fa{
+		width: 55px
+	}		
+	.profile-photo{
+		width: 220px;
+	}		
+	.login-icon{
+		font-size: 18px;
+		padding-bottom: 0px;
+	}
+	.log-icon{
+		font-size: 12px;	
+	}	
+}
+.container{
+	padding-top: 30px;
+}
+.navbar{
+	background-color: #cc0000;
+}
+.navbar a:link{
+	text-decoration: none; 
+	color: white;
+}
+nav li:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav{
+}
+#navbarDropdownShow{
+	background-color: #ff4d4d;
+}
+#navbarDropdownShow .dropdown-header{
+	background-color: #444444;
+	color: white;
+}
+#navbarDropdownShow .dropdown-item:hover{
+	color: black;
+}
+.profile-photo{		
+	margin-left:auto;
+	margin-right:auto;
+}
+#sign-up-button label{
+	text-decoration: underline;
+	color: orange;
+	font-size: 18px;
+	opacity: 0.8;
+}
+#sign-up-button label:hover{
+	opacity: 1;
+	font-weight: bold;
+	cursor: pointer;
+}
+	#forget-account label{
+	text-decoration: underline;
+	font-size: 15px;
+	opacity: 0.8;
+}
+#forget-account label:hover{
+	opacity: 1;
+	cursor: pointer;
+	font-weight: bold;
+}
+#accordionOne .card a{
+	background-color: #f24040;color:white;
+}
+#accordionOne .card-body a{
+	background-color: #990000;
+}
+#accordionOne .card-body a:hover{
+	opacity: 0.6;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	
+}
+.navbar{
+	position: sticky;
+	top: 0px;
+	z-index: 9999;
+}
+#accordionOne a:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
