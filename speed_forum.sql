@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
--- 主機: 127.0.0.1
--- 產生時間： 2018-04-27 21:33:31
--- 伺服器版本: 10.1.30-MariaDB
--- PHP 版本： 7.2.1
+-- Host: 127.0.0.1
+-- Generation Time: Jul 14, 2020 at 04:39 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 資料庫： `speed_forum`
+-- Database: `speed_forum`
 --
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `categroies`
+-- Table structure for table `categroies`
 --
 
 CREATE TABLE `categroies` (
@@ -36,7 +36,7 @@ CREATE TABLE `categroies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `categroies`
+-- Dumping data for table `categroies`
 --
 
 INSERT INTO `categroies` (`catid`, `catname`, `grouping`, `catdescription`) VALUES
@@ -63,7 +63,7 @@ INSERT INTO `categroies` (`catid`, `catname`, `grouping`, `catdescription`) VALU
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `comments`
+-- Table structure for table `comments`
 --
 
 CREATE TABLE `comments` (
@@ -83,7 +83,7 @@ CREATE TABLE `comments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `comments`
+-- Dumping data for table `comments`
 --
 
 INSERT INTO `comments` (`cid`, `sid`, `tutorName`, `year_finished`, `grades`, `workload`, `comment_group_project`, `comment_assignment`, `comment_test`, `comment_exam`, `comment_Identity`, `comment_datetime`, `comments_content`) VALUES
@@ -102,12 +102,13 @@ INSERT INTO `comments` (`cid`, `sid`, `tutorName`, `year_finished`, `grades`, `w
 (23, 60, '', '2015/16 SEM A', 'A+', 'Very Light', 0, 0, 0, 0, 0, '2018-04-19 04:18:37', 'qwefcfwqased'),
 (24, 60, '', '2015/16 SEM A', 'A+', 'Very Light', 0, 0, 0, 0, 0, '2018-04-19 04:18:45', 'qwefcfwqased'),
 (25, 51, '', '2015/16 SEM A', 'A+', 'Very Light', 0, 0, 0, 0, 0, '2018-04-19 04:18:57', 'qwevrqwetrqwetvqewrtwert234234v2'),
-(26, 58, '', '2015/16 SEM A', 'A+', 'Very Light', 0, 0, 0, 0, 0, '2018-04-19 04:19:15', 'cqwf23q441234c32wqrwercasd');
+(26, 58, '', '2015/16 SEM A', 'A+', 'Very Light', 0, 0, 0, 0, 0, '2018-04-19 04:19:15', 'cqwf23q441234c32wqrwercasd'),
+(27, 57, 'dfaef', '2015/16 SEM A', 'A+', 'Very Light', 2, 2, 2, 2, 25, '2020-07-14 04:39:08', 'GOOD');
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `logbook`
+-- Table structure for table `logbook`
 --
 
 CREATE TABLE `logbook` (
@@ -130,7 +131,7 @@ CREATE TABLE `logbook` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `logbook`
+-- Dumping data for table `logbook`
 --
 
 INSERT INTO `logbook` (`target_table`, `action`, `col1`, `col2`, `col3`, `col4`, `col5`, `col6`, `col7`, `col8`, `col9`, `col10`, `col11`, `col12`, `col13`, `col14`) VALUES
@@ -179,7 +180,7 @@ INSERT INTO `logbook` (`target_table`, `action`, `col1`, `col2`, `col3`, `col4`,
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `postinfo`
+-- Table structure for table `postinfo`
 --
 
 CREATE TABLE `postinfo` (
@@ -192,25 +193,25 @@ CREATE TABLE `postinfo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `postinfo`
+-- Dumping data for table `postinfo`
 --
 
 INSERT INTO `postinfo` (`pid`, `uid`, `catid`, `post_title`, `post_numberOfvisits`, `post_datetime`) VALUES
 (1, 1, 3, 'Test123123 29/3/2018', 207, '2018-03-29 00:00:00'),
 (3, 1, 3, 'another test', 117, '2018-04-10 00:00:00'),
-(4, 23, 3, 'Let Me Try this effect!!!!!!!', 143, '2018-04-19 11:54:45'),
+(4, 23, 3, 'Let Me Try this effect!!!!!!!', 145, '2018-04-19 11:54:45'),
 (32, 1, 2, 'OMG', 36, '2018-04-20 21:53:12'),
-(36, 1, 3, 'I could not believe that', 16, '2018-04-20 22:39:56'),
-(37, 1, 1, 'CHECK alert problem', 2, '2018-04-20 22:55:45'),
+(36, 1, 3, 'I could not believe that', 17, '2018-04-20 22:39:56'),
+(37, 1, 1, 'CHECK alert problem', 3, '2018-04-20 22:55:45'),
 (38, 1, 1, 'fhwquiefh', 1, '2018-04-20 22:59:49'),
 (39, 1, 1, 'OMGASDGASDGASD', 3, '2018-04-20 23:04:54'),
-(40, 24, 1, 'i am female', 18, '2018-04-20 23:42:59'),
-(41, 24, 16, 'Hello surveying', 13, '2018-04-21 00:02:38');
+(40, 24, 1, 'i am female', 20, '2018-04-20 23:42:59'),
+(41, 24, 16, 'Hello surveying', 15, '2018-04-21 00:02:38');
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `replies`
+-- Table structure for table `replies`
 --
 
 CREATE TABLE `replies` (
@@ -223,7 +224,7 @@ CREATE TABLE `replies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `replies`
+-- Dumping data for table `replies`
 --
 
 INSERT INTO `replies` (`replies_id`, `pid`, `rid`, `uid`, `replies_datetime`, `content`) VALUES
@@ -284,7 +285,7 @@ INSERT INTO `replies` (`replies_id`, `pid`, `rid`, `uid`, `replies_datetime`, `c
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `reply_like`
+-- Table structure for table `reply_like`
 --
 
 CREATE TABLE `reply_like` (
@@ -295,7 +296,7 @@ CREATE TABLE `reply_like` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `reply_like`
+-- Dumping data for table `reply_like`
 --
 
 INSERT INTO `reply_like` (`likeId`, `pid`, `rid`, `uid`) VALUES
@@ -320,15 +321,15 @@ INSERT INTO `reply_like` (`likeId`, `pid`, `rid`, `uid`) VALUES
 (90, 1, 10, 22),
 (93, 41, 1, 1),
 (94, 4, 3, 1),
-(95, 4, 4, 1),
 (97, 40, 2, 24),
 (98, 40, 8, 24),
-(99, 40, 3, 1);
+(99, 40, 3, 1),
+(100, 4, 4, 1);
 
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `subject`
+-- Table structure for table `subject`
 --
 
 CREATE TABLE `subject` (
@@ -342,7 +343,7 @@ CREATE TABLE `subject` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `subject`
+-- Dumping data for table `subject`
 --
 
 INSERT INTO `subject` (`sid`, `subject_code`, `subject_name`, `subject_categories`, `subject_subgroup`, `subject_level`, `subject_language`) VALUES
@@ -376,7 +377,7 @@ INSERT INTO `subject` (`sid`, `subject_code`, `subject_name`, `subject_categorie
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `userinfo`
+-- Table structure for table `userinfo`
 --
 
 CREATE TABLE `userinfo` (
@@ -389,51 +390,52 @@ CREATE TABLE `userinfo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- 資料表的匯出資料 `userinfo`
+-- Dumping data for table `userinfo`
 --
 
 INSERT INTO `userinfo` (`uid`, `username`, `user_password`, `sex`, `email`, `user_datatime`) VALUES
 (1, 'admin', '1234', 'S', 'DBC@gmail.com', '2018-01-12 12:00:00'),
 (23, 'helloIamUser', 'asdf1234', 'S', 'helloIamUser', '2018-04-19 11:51:53'),
-(24, 'iamfemale', 'asdf1234', 'F', '17052151121', '2018-04-20 23:42:33');
+(24, 'iamfemale', 'asdf1234', 'F', '17052151121', '2018-04-20 23:42:33'),
+(25, 'steveleungtest', 'test1234', 'S', '1705213ss', '2020-07-14 10:38:38');
 
 --
--- 已匯出資料表的索引
+-- Indexes for dumped tables
 --
 
 --
--- 資料表索引 `categroies`
+-- Indexes for table `categroies`
 --
 ALTER TABLE `categroies`
   ADD PRIMARY KEY (`catid`);
 
 --
--- 資料表索引 `comments`
+-- Indexes for table `comments`
 --
 ALTER TABLE `comments`
   ADD PRIMARY KEY (`cid`),
   ADD UNIQUE KEY `cid` (`cid`);
 
 --
--- 資料表索引 `postinfo`
+-- Indexes for table `postinfo`
 --
 ALTER TABLE `postinfo`
   ADD PRIMARY KEY (`pid`);
 
 --
--- 資料表索引 `replies`
+-- Indexes for table `replies`
 --
 ALTER TABLE `replies`
   ADD PRIMARY KEY (`replies_id`);
 
 --
--- 資料表索引 `reply_like`
+-- Indexes for table `reply_like`
 --
 ALTER TABLE `reply_like`
   ADD PRIMARY KEY (`likeId`);
 
 --
--- 資料表索引 `subject`
+-- Indexes for table `subject`
 --
 ALTER TABLE `subject`
   ADD PRIMARY KEY (`sid`),
@@ -441,7 +443,7 @@ ALTER TABLE `subject`
   ADD UNIQUE KEY `subject_code` (`subject_code`);
 
 --
--- 資料表索引 `userinfo`
+-- Indexes for table `userinfo`
 --
 ALTER TABLE `userinfo`
   ADD PRIMARY KEY (`uid`),
@@ -449,44 +451,44 @@ ALTER TABLE `userinfo`
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- 在匯出的資料表使用 AUTO_INCREMENT
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- 使用資料表 AUTO_INCREMENT `comments`
+-- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `cid` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `cid` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- 使用資料表 AUTO_INCREMENT `postinfo`
+-- AUTO_INCREMENT for table `postinfo`
 --
 ALTER TABLE `postinfo`
   MODIFY `pid` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- 使用資料表 AUTO_INCREMENT `replies`
+-- AUTO_INCREMENT for table `replies`
 --
 ALTER TABLE `replies`
   MODIFY `replies_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 
 --
--- 使用資料表 AUTO_INCREMENT `reply_like`
+-- AUTO_INCREMENT for table `reply_like`
 --
 ALTER TABLE `reply_like`
-  MODIFY `likeId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `likeId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
--- 使用資料表 AUTO_INCREMENT `subject`
+-- AUTO_INCREMENT for table `subject`
 --
 ALTER TABLE `subject`
   MODIFY `sid` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1008;
 
 --
--- 使用資料表 AUTO_INCREMENT `userinfo`
+-- AUTO_INCREMENT for table `userinfo`
 --
 ALTER TABLE `userinfo`
-  MODIFY `uid` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `uid` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
